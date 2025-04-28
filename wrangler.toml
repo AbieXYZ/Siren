@@ -1,4 +1,4 @@
-name = "serverabiii"
+name = "siren"
 main = "build/worker/shim.mjs"
 compatibility_date = "2024-05-23"
 minify = true
@@ -16,10 +16,10 @@ routes = [
 binding = "SIREN"
 id = "2052d9e1b5494957aa98602ad27ed692"
 [build]
-command = "cargo install worker-build && worker-build --release"
+command = "cargo install -q worker-build && worker-build --release"
 
 [env.dev]
-build = { command = "cargo install worker-build && worker-build --dev" }
+build = { command = "cargo install -q worker-build && worker-build --dev" }
 
 [vars]
 UUID = "f282b878-8711-45a1-8c69-5564172123c1"
