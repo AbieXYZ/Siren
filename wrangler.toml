@@ -11,6 +11,7 @@ routes = [
   { pattern = "zaintest.vuclip.com.stop.serveraby.web.id", custom_domain = true },
   { pattern = "support.zoom.us.stop.serveraby.web.id", custom_domain = true },
   { pattern = "cache.netflix.com.stop.serveraby.web.id", custom_domain = true },
+]
 
 [[kv_namespaces]]
 binding = "SIREN"
@@ -24,5 +25,6 @@ build = { command = "cargo install worker-build && worker-build --dev" }
 
 [vars]
 UUID = "f282b878-8711-45a1-8c69-5564172123c1"
-MAIN_PAGE_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Siren/refs/heads/master/web/index.html"
-SUB_PAGE_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Siren/refs/heads/master/web/sub.html"
+MAIN_PAGE_URL = "https://raw.githubusercontent.com/AbieXYZ/abiiigitme/refs/heads/master/web/index.html"
+SUB_PAGE_URL = "https://raw.githubusercontent.com/AbieXYZ/abiiigitme/refs/heads/master/web/sub.html"
+LINK_PAGE_URL = "https://raw.githubusercontent.com/AbieXYZ/abiiigitme/refs/heads/master/web/link.html"
