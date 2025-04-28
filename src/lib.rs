@@ -26,13 +26,11 @@ async fn main(req: Request, env: Env, _: Context) -> Result<Response> {
     let link_page_url = env.var("LINK_PAGE_URL").map(|x|x.to_string()).unwrap();
     let sub_page_url = env.var("SUB_PAGE_URL").map(|x|x.to_string()).unwrap();
 
-    
-    
     Router::with_data(config)
         .on_async("/", fe)
         .on_async("/sub", sub)
         .on("/link", link)
-        .on_async("/:proxyip", tunnel 
+        .on_async("/:proxyip", tunnel)
         .run(req, env)
         .await
 }
